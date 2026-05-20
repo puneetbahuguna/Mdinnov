@@ -28,7 +28,41 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
-			
+		
+				<style>
+				#header {
+					background: #ffffff !important; /* Pure solid white background */
+					box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05); /* Very soft shadow to separate it from the banner */
+					transition: all 0.3s ease;
+				}
+				/* Ensure top header text elements (email, social icons) are crisp and visible */
+				.header-top-left a, .header-top-right ul li a {
+					color: #0f2c59 !important;
+					font-weight: 500;
+				}
+				/* Keep the social media icons charcoal gray */
+				.header-top-right ul li a {
+					color: #0f2c59 !important;
+				}
+				/* Turn navigation menu links dark gray/black so they show up on the white background */
+				.nav-menu a {
+					color: #0f2c59 !important;
+				}
+				/* Keep your active page indicator accent yellow color */
+				.nav-menu li.menu-active a {
+					color: #fab702 !important; 
+				}
+				/* Make sure the mobile menu toggle button turns dark on smaller screens */
+				#mobile-nav-toggle i {
+					color: #222222 !important;
+				}
+				/* Professional sizing alignment framework for your logo image */
+				#logo img {
+					max-height: 50px;
+					width: auto;
+					display: block;
+				}
+			</style>		
 		</head>
 		<body>	
 			  <header id="header" id="home">
@@ -37,7 +71,7 @@
 				  		<div class="row">
 				  			<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
 				  			
-				  				<a href="mailto:support@colorlib.com">info@mdinnov.com</a>					  
+				  				<a href="mailto:info@mdinnov.com">info@mdinnov.com</a>					  
 				  			</div>
 				  			<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
 				  				<ul>
@@ -53,7 +87,7 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.html"><img src="img/logo.png" alt="Millwork & Design Innovations" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -71,23 +105,26 @@
 			  </header><!-- #header -->
 
 			<!-- start banner Area -->
-			<section class="banner-area relative" id="home">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row fullscreen d-flex justify-content-center align-items-center">
-						<div class="banner-content col-lg-9 col-md-12 justify-content-center ">
-							<h1>
-								Welcome to Millwork & Design Innovations
-										
-							</h1>
-							<p class="text-white mx-auto">
-								Your premier destination for top quality Millwork, Tile, Stone, Panelling, BIM/Revit, Shop drawings.
-							</p>
-							<a href="#" class="primary-btn header-btn text-uppercase mt-10">Get Started</a>
-						</div>											
-					</div>
+					<section class="banner-area relative" id="home">
+			<div class="container">
+				<div class="row fullscreen d-flex justify-content-center align-items-center">
+					
+					<div class="banner-content col-lg-9 col-md-12 justify-content-center ">
+						<h1 style="color: #222222 !important; font-weight: 700; text-shadow: 0px 1px 2px rgba(255,255,255,0.8);">
+							Welcome to Millwork & Design Innovations
+						</h1>
+						
+						<p class="mx-auto" style="color: #0c2340 !important; font-weight: 600; font-size: 18px; margin-top: 15px; letter-spacing: 0.3px; text-shadow: 0px 2px 4px rgba(255, 255, 255, 1), 0px 0px 8px rgba(255, 255, 255, 0.8); max-width: 750px; line-height: 1.5;">
+			Your premier destination for top quality Millwork, Tile, Stone, Panelling, BIM/Revit, Shop drawings.
+			</p>
+						
+						<a href="contact.html" class="primary-btn header-btn text-uppercase mt-10" style="background-color: #f8b600 !important; color: #222222 !important; font-weight: 700;">
+							Get Started
+						</a
+					</div>											
 				</div>
-			</section>
+			</div>
+		</section>
 			<!-- End banner Area -->
 			
 			<!-- Start service Area -->

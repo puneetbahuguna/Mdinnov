@@ -28,6 +28,40 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<style>
+				#header {
+					background: #ffffff !important; /* Pure solid white background */
+					box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05); /* Very soft shadow to separate it from the banner */
+					transition: all 0.3s ease;
+				}
+				/* Ensure top header text elements (email, social icons) are crisp and visible */
+				.header-top-left a, .header-top-right ul li a {
+					color: #0f2c59 !important;
+					font-weight: 500;
+				}
+				/* Keep the social media icons charcoal gray */
+				.header-top-right ul li a {
+					color: #0f2c59 !important;
+				}
+				/* Turn navigation menu links dark gray/black so they show up on the white background */
+				.nav-menu a {
+					color: #0f2c59 !important;
+				}
+				/* Keep your active page indicator accent yellow color */
+				.nav-menu li.menu-active a {
+					color: #fab702 !important; 
+				}
+				/* Make sure the mobile menu toggle button turns dark on smaller screens */
+				#mobile-nav-toggle i {
+					color: #222222 !important;
+				}
+				/* Professional sizing alignment framework for your logo image */
+				#logo img {
+					max-height: 50px;
+					width: auto;
+					display: block;
+				}
+			</style>
 		</head>
 		<body>	
 			  <header id="header" id="home">
@@ -55,12 +89,12 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
+				          <li><a href="index.html">Home</a></li>
 				          <li><a href="about.html">About</a></li>
 				          <li><a href="services.html">Services</a></li>
 				          <li><a href="projects.html">Projects</a></li>
 				         			          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li class="menu-active"><a href="contact.html">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -69,14 +103,17 @@
 
 			<!-- start banner Area -->
 			<section class="banner-area relative" id="home">	
-				<div class="overlay overlay-bg"></div>
+				<!--<div class="overlay overlay-bg"></div>-->
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
-							<h1 class="text-white">
+							<h1 style="color: #0a1d37 !important; font-weight: 700; font-size: 38px; letter-spacing: 0.2px; margin-bottom: 12px;">
 								Contact Us				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+							<p class="link-nav" style="font-weight: 500; font-size: 14px;">
+					<a href="index.html" style="color: #0f2c59 !important; font-weight: 600;">Home</a> 
+					<span class="lnr lnr-arrow-right" style="color: #778899 !important; margin: 0 6px; font-size: 11px;"></span> 
+					<span style="color: #0f2c59 !important; font-weight: 600;">Contact Us</span>
 						</div>	
 					</div>
 				</div>

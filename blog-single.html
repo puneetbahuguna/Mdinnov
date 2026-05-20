@@ -28,6 +28,40 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<style>
+				#header {
+					background: #ffffff !important; /* Pure solid white background */
+					box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05); /* Very soft shadow to separate it from the banner */
+					transition: all 0.3s ease;
+				}
+				/* Ensure top header text elements (email, social icons) are crisp and visible */
+				.header-top-left a, .header-top-right ul li a {
+					color: #0f2c59 !important;
+					font-weight: 500;
+				}
+				/* Keep the social media icons charcoal gray */
+				.header-top-right ul li a {
+					color: #0f2c59 !important;
+				}
+				/* Turn navigation menu links dark gray/black so they show up on the white background */
+				.nav-menu a {
+					color: #0f2c59 !important;
+				}
+				/* Keep your active page indicator accent yellow color */
+				.nav-menu li.menu-active a {
+					color: #fab702 !important; 
+				}
+				/* Make sure the mobile menu toggle button turns dark on smaller screens */
+				#mobile-nav-toggle i {
+					color: #222222 !important;
+				}
+				/* Professional sizing alignment framework for your logo image */
+				#logo img {
+					max-height: 50px;
+					width: auto;
+					display: block;
+				}
+			</style>
 		</head>
 		<body class="blog-page">	
 			  <header id="header" id="home">
@@ -36,7 +70,7 @@
 				  		<div class="row">
 				  			<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
 				  				<a href="tel:+953 012 3654 896">+953 012 3654 896</a>
-				  				<a href="mailto:support@colorlib.com">support@colorlib.com</a>					  
+				  				<a href="mailto:info@mdinnov.com">support@colorlib.com</a>					  
 				  			</div>
 				  			<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
 				  				<ul>
@@ -56,14 +90,14 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
+				          <li><a href="index.html">Home</a></li>
 				          <li><a href="about.html">About</a></li>
 				          <li><a href="services.html">Services</a></li>
 				          <li><a href="projects.html">Projects</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
 				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li class="menu-active"><a href="blog-single.html">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
